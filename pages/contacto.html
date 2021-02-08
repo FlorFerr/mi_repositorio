@@ -43,25 +43,31 @@
 		  </nav>		
 	</header>
 	<section>
-		<h1>Escribinos!</h1> 
-			<form>
-				<!-- Acá va el atributo Action, Method (Get o Post) y Enctype Depende del hosting-->
-			<label for="nombre">Nombre</label>
-			<input type="Text" name="Nombre" id="nombre" required=""><br>
-			<label for="telefono">Teléfono</label>
-			<input type="number" name="Telefono" id="telefono" required=""><br>
-			<label for="email">Email</label>
-			<input type="Email" name="Email" placeholder="Nombre@ejemplo.com" id="email"><br>
-			<label for="servicio">¿Qué servicio te interesa?</label>
-			<select name="Servicio" id="servicio" required="">
-				<option value="Actividades recreativas">Actividades recreativas</option>
-				<option value="Natación">Natación</option>
-				<option value="Ambas opciones">Ambas opciones</option>
-			</select><br>
-			<label for="comentario">Dejanos tu consulta</label><br>
-			<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-			<input type="submit" value="Enviar" name="Enviar">
+		<h1 class="form__titulo">Escribinos!</h1> 
+		<div class="formulario__contenedor">
+			<form class="form">
+			<div class="form__section">
+			<label for="nombre"></label>
+			<input type="Text" name="Nombre" id="nombre" required placeholder="Nombre" class="form__item">
+			</div>
+			<div class="form__section">
+			<label for="telefono"></label>
+			<input type="number" name="Telefono" id="telefono" placeholder="Teléfono" class="form__item">
+			</div>
+			<div class="form__section">
+			<label for="email"></label>
+			<input type="Email" name="Email" required id="email" placeholder="Email" class="form__item">
+			</div>
+			<div class="form__section">
+			<label for="comentario"></label>
+			<textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tu mensaje" class="form__item"></textarea><br>
+			</div>
+			<div class="form__section">
+			<div form__boton>
+			<input type="submit" value="Enviar" name="Enviar" class="form__item"></div>
+			</div>
 			</form>
+		</div>
 	</section>	
 	<footer>
 		<ul class="rrss">
