@@ -185,10 +185,8 @@ footer {
 
 .formulario__contenedor {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px; }
+  margin: 25px; }
   .formulario__contenedor .form {
     text-align: center;
     width: 500px; }
@@ -197,11 +195,14 @@ footer {
       .formulario__contenedor .form .form__section textarea {
         height: 110px;
         resize: none; }
-      .formulario__contenedor .form .form__section .form__item {
-        margin: 7px 0;
-        border: none;
-        border-bottom: 3px solid #59e5d4;
-        background-color: transparent;
-        width: 100%;
-        outline: none;
-        color: black; }
+
+.form-control {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 3px solid #36d4e4; }
+
+.form-control:focus {
+  outline: none;
+  background-color: #CAFBE8;
+  box-shadow: 1px 1px 4px 1px #000000; }
