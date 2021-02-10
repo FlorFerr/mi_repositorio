@@ -119,7 +119,7 @@ h1 {
 .galeria__conteiner {
   display: grid;
   margin: 30px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
   grid-gap: 15px; }
 
@@ -135,7 +135,7 @@ h1 {
     filter: grayscale(80%); }
   .galeria__img:hover {
     filter: grayscale(0%);
-    box-shadow: 1px 1px 5px 1px #000000; } }
+    box-shadow: 0 2px 2px black; } }
 
 @media only screen and (max-width: 768px) {
   .galeria__conteiner {
@@ -149,8 +149,11 @@ h1 {
 
 .formulario__contenedor {
   display: flex;
-  justify-content: center;
-  margin: 25px; }
+  justify-content: space-evenly;
+  margin: 25px;
+  flex-wrap: wrap; }
+  .formulario__contenedor .sub__contacto {
+    margin: 10px; }
   .formulario__contenedor .form {
     text-align: center;
     width: 500px; }
@@ -159,16 +162,17 @@ h1 {
       .formulario__contenedor .form .form__section textarea {
         height: 110px;
         resize: none; }
+  .formulario__contenedor .ubicacion {
+    text-align: center;
+    width: 500px; }
 
 .form-control {
   outline: none;
-  border: none;
   border-radius: 10px;
   border-bottom: 3px solid #36d4e4; }
 
 .form-control:focus {
   outline: none;
-  background-color: #CAFBE8;
   box-shadow: 1px 1px 4px 1px #000000; }
 
 /*Nosotros*/

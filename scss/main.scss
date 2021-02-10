@@ -137,7 +137,7 @@ h1{
 .galeria__conteiner{
     display: grid;
     margin: 30px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 300px;
     grid-gap: 15px;
 }
@@ -152,8 +152,7 @@ h1{
         cursor: pointer;
         filter: grayscale(80%);}
         .galeria__img:hover{ filter: grayscale(0%);
-
-box-shadow: 1px 1px 5px 1px #000000;
+        box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)
     }
     
     }
@@ -170,8 +169,12 @@ box-shadow: 1px 1px 5px 1px #000000;
 }
 .formulario__contenedor{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 25px;   
+    flex-wrap: wrap;
+    .sub__contacto{
+        margin: 10px;
+    }
     .form{
         text-align: center;
         width: 500px;
@@ -183,17 +186,19 @@ box-shadow: 1px 1px 5px 1px #000000;
            
         }
     }
+    .ubicacion{
+        text-align: center;
+        width: 500px;
+    }
 }
 .form-control{
     outline: none;
-    border: none;
     border-radius: 10px;
     border-bottom: 3px solid #36d4e4;
     
 }
 .form-control:focus{
     outline: none;
-    background-color: #CAFBE8;
     box-shadow: 1px 1px 4px 1px #000000;}
 
 
