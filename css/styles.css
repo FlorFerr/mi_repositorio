@@ -73,7 +73,13 @@ footer {
 h1 {
   margin: 20px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
+
+h2 {
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: center; }
 
 /*Actividades*/
 .card {
@@ -82,19 +88,12 @@ h1 {
   text-align: center;
   transition: all 0.5s; }
 
+.buceo__card li {
+  list-style: none;
+  text-align: left; }
+
 .row__card {
   justify-content: space-around; }
-
-.horarios {
-  margin: 20px; }
-  .horarios .horarios__titulo {
-    text-transform: uppercase; }
-  .horarios .horarios__items {
-    list-style-type: none; }
-
-@media only screen and (max-width: 674px) {
-  .horarios {
-    text-align: center; } }
 
 /*Galeria*/
 .galeria__carousel {
@@ -152,8 +151,6 @@ h1 {
   justify-content: space-evenly;
   margin: 25px;
   flex-wrap: wrap; }
-  .formulario__contenedor .sub__contacto {
-    margin: 10px; }
   .formulario__contenedor .form {
     text-align: center;
     width: 500px; }
