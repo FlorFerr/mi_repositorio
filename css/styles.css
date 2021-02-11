@@ -74,7 +74,7 @@ footer {
   transition: 0.5s; }
 
 h1 {
-  margin: 20px;
+  margin: 20px 0;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
