@@ -171,6 +171,10 @@ h2 {
   outline: none;
   box-shadow: 1px 1px 4px 1px #000000; }
 
+@media only screen and (min-width: 480px) {
+  .mapa__contacto {
+    width: 400px; } }
+
 /*Nosotros*/
 .nosotros__img {
   width: 100%;
