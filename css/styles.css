@@ -97,6 +97,9 @@ span {
     text-align: center;
     transition: all 0.5s; }
 
+.card:hover {
+  transform: translate(0, -20px); }
+
 /*Nosotros*/
 .nosotros__contenedor {
   display: flex;
