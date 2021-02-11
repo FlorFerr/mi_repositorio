@@ -38,7 +38,6 @@ footer{
     height: 10vh;
     display: flex;
     justify-content: center;
-    
     background-color: $color-footer;
     box-shadow: 0px -1px 7px 1px rgba(0,0,0,0.66); 
     .rrss{
@@ -65,8 +64,7 @@ footer{
                 transition: 0,5s; 
             }
             .rrss__lista__enlace:hover{
-                color: white;
-                
+                color: white; 
             } 
         }
     }
@@ -102,51 +100,67 @@ span{
 
 
 /*Actividades*/
-.card{
-    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.66);
-    margin: 20px;
-    text-align: center;
-    transition: all 0.5s;
-   
-}
-.buceo__card li{
-    list-style: none;
-    text-align: left;
-}
-
-
 .row__card{
     justify-content: space-around;
+    .card{
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.66);
+        margin: 20px;
+        text-align: center;
+        transition: all 0.5s;
+    }
 }
 
-
+/*Nosotros*/
+.nosotros__contenedor{
+    display: flex;
+    align-items: center;
+    .nosotros__items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .nosotros__img{
+            width: 85%;
+            height: auto;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)  
+        }
+        .nosotros__pie{
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+    }    
+}
+@media only screen and (min-width: 480px) {
+    .nosotros__texto{
+        margin-left: 20px;}
+    }
 /*Galeria*/
-.galeria__carousel{
-    margin: 20px;
-}
 .galeria__contenedor{
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    .galeria__video{
+        width: 80%;
+        height: auto;
+        margin: 20px;  
+    }
 }
-.galeria__video{
-    width: 80%;
-    height: auto;
-    margin: 20px;  
+.galeria__carousel{
+    margin: 20px;
 }
-
-.galeria__conteiner{
+.galeria__desktop{
     display: grid;
     margin: 30px;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 300px;
+    grid-auto-rows: auto;
     grid-gap: 15px;
+    .galeria__img{
+        width: 100%;
+        height: 100%;}
 }
-.galeria__img{
-    width: 100%;
-    height: 100%;}  
-
 @media only screen and (min-width: 768px) {
     .galeria__mobile{
         display: none;}
@@ -154,22 +168,18 @@ span{
         cursor: pointer;
         filter: grayscale(80%);}
         .galeria__img:hover{ filter: grayscale(0%);
-        box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)
-    }
-    
+        box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)}
     }
 @media only screen and (max-width: 768px) {
-    .galeria__conteiner{
+    .galeria__desktop{
         display: none;}
     }
-
 /*Contacto*/
 .formulario__contenedor{
     display: flex;
     justify-content: space-evenly;
     margin: 25px;   
     flex-wrap: wrap;
-
     .form{
         text-align: center;
         width: 500px;
@@ -178,51 +188,33 @@ span{
             textarea{
                 height: 110px;
                 resize: none;}
-           
         }
+        .form-control{
+            outline: none;
+            border-radius: 10px;
+            border-bottom: 3px solid #36d4e4;}
     }
     .ubicacion{
         text-align: center;
-        width: 500px;
-    }
+        width: 500px;}
 }
-.form-control{
-    outline: none;
-    border-radius: 10px;
-    border-bottom: 3px solid #36d4e4;
-    
-}
+
 .form-control:focus{
     outline: none;
     box-shadow: 1px 1px 4px 1px #000000;}
 
-@media only screen and (min-width: 480px) {
-     .mapa__contacto{
-            width: 400px;
-        }}
+@media only screen and (min-width: 480px){
+    .mapa__contacto{
+        width: 400px;}
+    }
 
 
-/*Nosotros*/
 
-.nosotros__img{
-    width: 85%;
-    height: auto;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)
-   
-    
-}
-.nosotros__text{
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    
-}
-.nosotros__contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+
+
+
+
+
 
     /*Index*/
 .bg{
