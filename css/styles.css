@@ -85,6 +85,9 @@ h2 {
   text-transform: uppercase;
   text-align: center; }
 
+span {
+  font-weight: bold; }
+
 /*Actividades*/
 .card {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.66);
@@ -172,7 +175,7 @@ h2 {
 
 /*Nosotros*/
 .nosotros__img {
-  width: 100%;
+  width: 85%;
   height: auto;
   margin-bottom: 10px;
   box-shadow: 0 2px 2px black; }
@@ -181,6 +184,11 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center; }
+
+.nosotros__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
 
 /*Index*/
 .bg {

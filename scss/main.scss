@@ -96,6 +96,9 @@ h2{
         text-transform: uppercase;
         text-align: center
     }
+span{
+    font-weight: bold;
+}
 
 
 /*Actividades*/
@@ -198,10 +201,11 @@ h2{
             width: 400px;
         }}
 
+
 /*Nosotros*/
 
 .nosotros__img{
-    width: 100%;
+    width: 85%;
     height: auto;
     margin-bottom: 10px;
     box-shadow: 0 2px 2px rgb(0, 0, 0 /20%)
@@ -214,7 +218,11 @@ h2{
     text-align: center;
     
 }
-
+.nosotros__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
     /*Index*/
 .bg{
