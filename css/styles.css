@@ -228,6 +228,3 @@ span {
 @media only screen and (min-width: 480px) {
   .bg__subtitulo {
     padding-bottom: 15px; } }
-
-.bg__enlaces:hover {
-  color: black; }
