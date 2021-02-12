@@ -193,7 +193,7 @@ span {
 
 /*Index*/
 .bg {
-  background-image: url(../images/fondo2.png);
+  background-image: url(../images/fondo1.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -229,6 +229,5 @@ span {
   .bg__subtitulo {
     padding-bottom: 15px; } }
 
-@media only screen and (min-width: 600px) {
-  .bg {
-    background-image: url(../images/fondo1.png); } }
+.bg__enlaces:hover {
+  color: black; }
