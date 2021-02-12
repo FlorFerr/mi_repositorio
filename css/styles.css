@@ -205,8 +205,8 @@ span {
     color: white;
     text-shadow: 3px 3px 10px #969696; }
     .bg .bg__text .bg__titulo {
-      margin: 0;
-      padding: 0;
+      margin: 30px 0 0;
+      padding: 30px 0 0;
       font-size: 14vmin; }
     .bg .bg__text .bg__subtitulo {
       margin: 0 0 20px;
