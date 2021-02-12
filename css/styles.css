@@ -78,7 +78,8 @@ h1 {
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  text-shadow: 0px 3px 5px #8a8888; }
 
 h2 {
   margin: 10px;
@@ -228,3 +229,6 @@ span {
 @media only screen and (min-width: 480px) {
   .bg__subtitulo {
     padding-bottom: 15px; } }
+
+a.bg__enlaces:hover {
+  text-shadow: 3px 5px 26px #92f0b0; }
