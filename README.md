@@ -1,2 +1,2 @@
 # mi_repositorio
-Proyecto Moana - Desarrollo Web Coderhouse
+Proyecto Moana - Desarrollo Web
